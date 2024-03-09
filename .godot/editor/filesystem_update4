@@ -1,12 +1,5 @@
-res://PlayerSc.tscn
 res://main.tscn
-res://PlayerSc.gd
+res://PlayerSc.tscn
 res://choice.tscn
-res://choice.gd
-res://chest.gd
-res://healthPotion.gd
-res://chest.tscn
-res://SpeedBoost.gd
-res://DamageBoost.tscn
-res://DamageBoost.gd
-res://HealthPotion.tscn
+res://character_body_2d.tscn
+res://character_body_2d.gd
