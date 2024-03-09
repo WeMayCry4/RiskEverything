@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://bati4xyjyh7bv"]
+
+[ext_resource type="Script" path="res://choice.gd" id="1_dvbip"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(220, 42)
+script = ExtResource("1_dvbip")
+drainSpeed = 0.3
+
+[node name="first" type="Button" parent="."]
+offset_left = -115.0
+offset_top = -21.0
+offset_right = -28.0
+offset_bottom = 10.0
+text = "Red Pill
+"
+
+[node name="second" type="Button" parent="."]
+offset_left = 35.0
+offset_top = -20.0
+offset_right = 128.0
+offset_bottom = 11.0
+text = "Blue Pill"
+
+[node name="bar" type="ColorRect" parent="."]
+offset_left = -42.0
+offset_top = 22.0
+offset_right = 250.0
+offset_bottom = 45.0
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="pressed" from="first" to="." method="_on_first_pressed"]
+[connection signal="pressed" from="second" to="." method="_on_second_pressed"]
