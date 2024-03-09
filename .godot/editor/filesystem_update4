@@ -1,5 +1,5 @@
-res://PlayerSc.tscn
 res://main.tscn
-res://PlayerSc.gd
+res://PlayerSc.tscn
 res://choice.tscn
-res://choice.gd
+res://character_body_2d.tscn
+res://character_body_2d.gd

@@ -1,12 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://by68c3w3urc82"]
 
-[ext_resource type="PackedScene" uid="uid://cdq1yakide1dq" path="res://PlayerSc.tscn" id="1_8vrx0"]
-[ext_resource type="PackedScene" uid="uid://bati4xyjyh7bv" path="res://choice.tscn" id="2_eq7xo"]
+[ext_resource type="PackedScene" uid="uid://da444tv5hnuxu" path="res://choice.tscn" id="2_eq7xo"]
+[ext_resource type="PackedScene" uid="uid://b1fd0k558kp2" path="res://character_body_2d.tscn" id="3_0mkfd"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_8vrx0")]
-position = Vector2(36, -7)
-
 [node name="Node2D" parent="." instance=ExtResource("2_eq7xo")]
 position = Vector2(99, 38)
+
+[node name="Player" parent="." instance=ExtResource("3_0mkfd")]
