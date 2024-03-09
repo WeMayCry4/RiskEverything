@@ -1,26 +1,10 @@
-[gd_scene load_steps=28 format=3 uid="uid://b1fd0k558kp2"]
+[gd_scene load_steps=29 format=3 uid="uid://b1fd0k558kp2"]
 
 [ext_resource type="Script" path="res://character_body_2d.gd" id="1_fjyft"]
 [ext_resource type="Texture2D" uid="uid://dobvkwauieauj" path="res://Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_qhc3j"]
+[ext_resource type="PackedScene" uid="uid://ckqb3dg2upw3k" path="res://health bar/health.tscn" id="3_yru1f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1si3a"]
-
-[sub_resource type="Animation" id="Animation_cmdoa"]
-resource_name = "walk right"
-length = 0.5
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [14, 15]
-}
 
 [sub_resource type="Animation" id="Animation_h338j"]
 length = 0.001
@@ -53,8 +37,8 @@ tracks/0/keys = {
 "values": [0, 1]
 }
 
-[sub_resource type="Animation" id="Animation_0hous"]
-resource_name = "idle up "
+[sub_resource type="Animation" id="Animation_fr21f"]
+resource_name = "idle left"
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -66,7 +50,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [4, 5]
+"values": [8, 9]
 }
 
 [sub_resource type="Animation" id="Animation_ur1a0"]
@@ -85,8 +69,8 @@ tracks/0/keys = {
 "values": [12, 13]
 }
 
-[sub_resource type="Animation" id="Animation_fr21f"]
-resource_name = "idle left"
+[sub_resource type="Animation" id="Animation_0hous"]
+resource_name = "idle up "
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -98,7 +82,24 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [8, 9]
+"values": [4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_xih1w"]
+resource_name = "walk down"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [2, 3]
 }
 
 [sub_resource type="Animation" id="Animation_u7ql1"]
@@ -118,6 +119,23 @@ tracks/0/keys = {
 "values": [10, 11]
 }
 
+[sub_resource type="Animation" id="Animation_cmdoa"]
+resource_name = "walk right"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [14, 15]
+}
+
 [sub_resource type="Animation" id="Animation_pwuy1"]
 resource_name = "walk up"
 length = 0.5
@@ -133,23 +151,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [6, 7]
-}
-
-[sub_resource type="Animation" id="Animation_xih1w"]
-resource_name = "walk down"
-length = 0.5
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [2, 3]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3ebln"]
@@ -232,6 +233,7 @@ states/Walk/position = Vector2(488, 97)
 transitions = ["İdle", "Walk", SubResource("AnimationNodeStateMachineTransition_58814"), "Walk", "İdle", SubResource("AnimationNodeStateMachineTransition_jxh7h"), "Start", "İdle", SubResource("AnimationNodeStateMachineTransition_15ufi")]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+collision_layer = 3
 script = ExtResource("1_fjyft")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -257,3 +259,9 @@ advance_expression_base_node = NodePath("../AnimationPlayer")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Walk/blend_position = Vector2(0.0169492, -0.667686)
 "parameters/İdle/blend_position" = Vector2(-0.0105932, 0.00480354)
+
+[node name="Health" parent="." instance=ExtResource("3_yru1f")]
+offset_left = -9.0
+offset_top = -16.0
+offset_right = 9.0
+offset_bottom = -12.0
