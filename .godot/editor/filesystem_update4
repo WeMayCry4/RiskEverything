@@ -8,3 +8,4 @@ res://enemyprototip.gd
 res://Area2D.gd
 res://Interaction/InteractionManager.gd
 res://Health.gd
+res://health bar/health.tscn
