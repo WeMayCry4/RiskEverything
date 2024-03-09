@@ -1,6 +1,6 @@
+TileMap
 Area2D
 CollisionShape2D
-TileMap
 Camera2D
 Node3D
 AnimationTree

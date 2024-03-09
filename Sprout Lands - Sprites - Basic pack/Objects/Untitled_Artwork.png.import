@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bc80ehtup7brq"
-path="res://.godot/imported/TX Player.png-76843177def311f1eac148eee80ba9c3.ctex"
+uid="uid://bfiy8qaas8xhj"
+path="res://.godot/imported/Untitled_Artwork.png-b880eb6b4ae30e789ffb4eb7756e47d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Texture/TX Player.png"
-dest_files=["res://.godot/imported/TX Player.png-76843177def311f1eac148eee80ba9c3.ctex"]
+source_file="res://Sprout Lands - Sprites - Basic pack/Objects/Untitled_Artwork.png"
+dest_files=["res://.godot/imported/Untitled_Artwork.png-b880eb6b4ae30e789ffb4eb7756e47d1.ctex"]
 
 [params]
 

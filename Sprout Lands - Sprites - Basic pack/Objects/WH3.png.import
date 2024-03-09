@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://copfsji480djd"
-path="res://.godot/imported/TX Tileset Stone Ground.png-6ca265edcb4346e8e4b8ff7d51da19c5.ctex"
+uid="uid://f7kqh46us7bk"
+path="res://.godot/imported/WH3.png-5b72c49f15c0577502af08bd327bb752.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Texture/TX Tileset Stone Ground.png"
-dest_files=["res://.godot/imported/TX Tileset Stone Ground.png-6ca265edcb4346e8e4b8ff7d51da19c5.ctex"]
+source_file="res://Sprout Lands - Sprites - Basic pack/Objects/WH3.png"
+dest_files=["res://.godot/imported/WH3.png-5b72c49f15c0577502af08bd327bb752.ctex"]
 
 [params]
 

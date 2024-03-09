@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2lhg5qo56423"
-path="res://.godot/imported/TX Struct.png-f3fd6416ddfe2dc6994b7cf0588896ff.ctex"
+uid="uid://cslkif4d3qnek"
+path="res://.godot/imported/Untitled_Artwork.png-a1c7638a0cc9821b0b5d59fed9bfb887.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Texture/TX Struct.png"
-dest_files=["res://.godot/imported/TX Struct.png-f3fd6416ddfe2dc6994b7cf0588896ff.ctex"]
+source_file="res://Sprout Lands - Sprites - Basic pack/Characters/Untitled_Artwork.png"
+dest_files=["res://.godot/imported/Untitled_Artwork.png-a1c7638a0cc9821b0b5d59fed9bfb887.ctex"]
 
 [params]
 

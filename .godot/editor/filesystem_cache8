@@ -1,21 +1,24 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709992047
+::res://::1710009726
 character_body_2d.gd::GDScript::-1::1709989727::0::1::::<>CharacterBody2D<>::
-character_body_2d.tscn::PackedScene::124172937525393257::1709989852::0::1::::<><>::res://character_body_2d.gd<>uid://dobvkwauieauj::::res://Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png
+character_body_2d.tscn::PackedScene::124172937525393257::1710000167::0::1::::<><>::res://character_body_2d.gd<>uid://dobvkwauieauj::::res://Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png
 choice.gd::GDScript::-1::1709989727::0::1::::<>Node2D<>::
-choice.tscn::PackedScene::7220942618518003530::1709989852::0::1::::<><>::res://choice.gd
+choice.tscn::PackedScene::7220942618518003530::1710000167::0::1::::<><>::res://choice.gd
 icon.svg::CompressedTexture2D::4929447104108784453::1709920634::1709920746::1::::<><>::
-main.tscn::PackedScene::4136957379669925837::1709989852::0::1::::<><>::uid://da444tv5hnuxu::::res://choice.tscn<>uid://b1fd0k558kp2::::res://character_body_2d.tscn
-PlayerSc.tscn::PackedScene::1912536872606538173::1709989852::0::1::::<><>::uid://dobvkwauieauj::::res://Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png
+main.tscn::PackedScene::4136957379669925837::1710000167::0::1::::<><>::uid://da444tv5hnuxu::::res://choice.tscn<>uid://b1fd0k558kp2::::res://character_body_2d.tscn
+PlayerSc.tscn::PackedScene::1912536872606538173::1710000167::0::1::::<><>::uid://dobvkwauieauj::::res://Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png
+1st map.tscn::PackedScene::154380546357886556::1710005815::0::1::::<><>::uid://ekwub783apet::::res://Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>uid://t5kkkv3ii24p::::res://Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png<>uid://b77stm4xuvles::::res://Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt.png<>uid://culfwn5joeyca::::res://Sprout Lands - Sprites - Basic pack/Tilesets/Water.png<>res://Texture/TX Tileset Grass.png<>res://Texture/TX Tileset Stone Ground.png<>res://Texture/TX Tileset Wall.png<>res://Texture/TX Props.png<>uid://b1fd0k558kp2::::res://character_body_2d.tscn
+2nd map.tscn::PackedScene::8618194296129111312::1710009726::0::1::::<><>::res://Texture/TX Plant.png<>res://Texture/TX Player.png<>uid://dhy15rosrnxdq::::res://Sprout Lands - Sprites - Basic pack/Objects/Basic_Furniture.png<>uid://bxsggqmk4lqp1::::res://Sprout Lands - Sprites - Basic pack/Objects/Basic_Grass_Biom_things.png<>uid://djsf52qhbdenq::::res://Sprout Lands - Sprites - Basic pack/Objects/Basic_Plants.png<>uid://vmou64bh76w1::::res://Sprout Lands - Sprites - Basic pack/Objects/Chest.png<>uid://bf6q2slvw8pia::::res://Sprout Lands - Sprites - Basic pack/Objects/Wood_Bridge.png<>uid://ekwub783apet::::res://Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>uid://t5kkkv3ii24p::::res://Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png<>uid://culfwn5joeyca::::res://Sprout Lands - Sprites - Basic pack/Tilesets/Water.png<>uid://b77stm4xuvles::::res://Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt.png<>uid://bfiy8qaas8xhj::::res://Sprout Lands - Sprites - Basic pack/Objects/Untitled_Artwork.png<>res://Texture/TX Props.png<>uid://dy7qxgj70fuxx::::res://Sprout Lands - Sprites - Basic pack/Objects/WH2.png<>uid://dcfhqpf0ejmcx::::res://Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png<>res://Texture/TX Shadow Plant.png<>res://Texture/TX Shadow.png<>uid://f7kqh46us7bk::::res://Sprout Lands - Sprites - Basic pack/Objects/WH3.png<>res://Texture/TX Struct.png<>res://Texture/TX Tileset Grass.png<>res://Texture/TX Tileset Stone Ground.png<>res://Texture/TX Tileset Wall.png<>uid://c0l2asw7yuccb::::res://Sprout Lands - Sprites - Basic pack/Objects/Paths.png
 ::res://Sprout Lands - Sprites - Basic pack/::1709989727
 read_me.txt::TextFile::-1::1709989727::0::1::::<><>::
-::res://Sprout Lands - Sprites - Basic pack/Characters/::1709991948
+::res://Sprout Lands - Sprites - Basic pack/Characters/::1710009046
 Basic Charakter Actions.png::CompressedTexture2D::4080612517150893494::1709989727::1709989727::1::::<><>::
 Basic Charakter Spritesheet.png::CompressedTexture2D::8145264310986221265::1709989727::1709989727::1::::<><>::
 Egg_And_Nest.png::CompressedTexture2D::7141501423425164064::1709989727::1709989727::1::::<><>::
 Free Chicken Sprites.png::CompressedTexture2D::7836440236906407591::1709989727::1709989727::1::::<><>::
 Free Cow Sprites.png::CompressedTexture2D::1441993157789479873::1709989727::1709989727::1::::<><>::
 Tools.png::CompressedTexture2D::1047065378170855102::1709989727::1709989727::1::::<><>::
+Untitled_Artwork.png::CompressedTexture2D::6059570472034792870::1710009042::1710009046::1::::<><>::
 ::res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/::1709991937
 ::res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/::1709991938
 TX Plant.png::CompressedTexture2D::1678411972066181137::1709991937::1709991938::1::::<><>::
@@ -37,7 +40,7 @@ TX Struct.png::CompressedTexture2D::2708611717515629374::1709991948::1709991948:
 TX Tileset Grass.png::CompressedTexture2D::781653979523336164::1709991948::1709991948::1::::<><>::
 TX Tileset Stone Ground.png::CompressedTexture2D::8912825901925135761::1709991948::1709991948::1::::<><>::
 TX Tileset Wall.png::CompressedTexture2D::6189896823444432831::1709991948::1709991948::1::::<><>::
-::res://Sprout Lands - Sprites - Basic pack/Objects/::1709989727
+::res://Sprout Lands - Sprites - Basic pack/Objects/::1710012743
 Basic_Furniture.png::CompressedTexture2D::7701762153637346698::1709989727::1709989727::1::::<><>::
 Basic_Grass_Biom_things.png::CompressedTexture2D::4038298763065764672::1709989727::1709989727::1::::<><>::
 Basic_Plants.png::CompressedTexture2D::7828479045342481634::1709989727::1709989727::1::::<><>::
@@ -47,6 +50,10 @@ Egg_item.png::CompressedTexture2D::7842640788318256210::1709989727::1709989727::
 Free_Chicken_House.png::CompressedTexture2D::337466310044060941::1709989727::1709989727::1::::<><>::
 Paths.png::CompressedTexture2D::6551910953329157613::1709989727::1709989727::1::::<><>::
 Simple_Milk_and_grass_item.png::CompressedTexture2D::4482857434900558425::1709989727::1709989727::1::::<><>::
+TX_Tileset_Grass.png::CompressedTexture2D::8681361152996527658::1710012743::1710012751::1::::<><>::
+Untitled_Artwork.png::CompressedTexture2D::2755396903339978107::1710002492::1710002495::1::::<><>::
+WH2.png::CompressedTexture2D::8910867262196972269::1710009217::1710009219::1::::<><>::
+WH3.png::CompressedTexture2D::417640462848966172::1710009271::1710009291::1::::<><>::
 Wood_Bridge.png::CompressedTexture2D::2802381263976820756::1709989727::1709989727::1::::<><>::
 ::res://Sprout Lands - Sprites - Basic pack/Sprout Lands color pallet/::1709989727
 Sprout Lands defautlt palette snip.PNG::CompressedTexture2D::7730151080206221959::1709989727::1709989727::1::::<><>::
@@ -60,13 +67,3 @@ Hills.png::CompressedTexture2D::1396144948568745557::1709989727::1709989727::1::
 Tilled_Dirt.png::CompressedTexture2D::4699651280346149070::1709989727::1709989727::1::::<><>::
 Water.png::CompressedTexture2D::6199669997446744260::1709989727::1709989727::1::::<><>::
 Wooden House.png::CompressedTexture2D::6537437046429153154::1709989727::1709989727::1::::<><>::
-::res://Texture/::1709991932
-TX Plant.png::CompressedTexture2D::5584749005948222476::1709991932::1709992049::1::::<><>::
-TX Player.png::CompressedTexture2D::2596448302792667526::1709991932::1709992049::1::::<><>::
-TX Props.png::CompressedTexture2D::1540649967434205647::1709991932::1709992049::1::::<><>::
-TX Shadow Plant.png::CompressedTexture2D::7464932521907058583::1709991932::1709992049::1::::<><>::
-TX Shadow.png::CompressedTexture2D::8937533482900436763::1709991932::1709992049::1::::<><>::
-TX Struct.png::CompressedTexture2D::1918244268329140414::1709991932::1709992049::1::::<><>::
-TX Tileset Grass.png::CompressedTexture2D::4246400178322545681::1709991932::1709992049::1::::<><>::
-TX Tileset Stone Ground.png::CompressedTexture2D::5786787060314971961::1709991932::1709992049::1::::<><>::
-TX Tileset Wall.png::CompressedTexture2D::4639188155940423749::1709991932::1709992049::1::::<><>::
