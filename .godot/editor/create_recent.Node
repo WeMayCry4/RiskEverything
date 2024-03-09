@@ -1,2 +1,10 @@
+Camera2D
+Timer
+ColorRect
+Button
+AnimationTree
+AnimationPlayer
+Sprite2D
+AnimatedSprite2D
 CollisionShape2D
 CharacterBody2D
