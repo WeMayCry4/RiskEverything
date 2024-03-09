@@ -1,8 +1,10 @@
+Label
+CollisionShape2D
+Area2D
+CharacterBody2D
+Sprite2D
 AnimationTree
 AnimationPlayer
-CollisionShape2D
-Sprite2D
-CharacterBody2D
 AnimatableBody2D
 Camera2D
 Timer
