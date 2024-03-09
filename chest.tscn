@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://hru1tl0e1q2v"]
+
+[ext_resource type="Script" path="res://chest.gd" id="1_3jxj2"]
+[ext_resource type="Texture2D" uid="uid://dj0bfbbnsagfq" path="res://Sprout Lands - Sprites - Basic pack/Objects/Egg_item.png" id="2_0l6ye"]
+[ext_resource type="PackedScene" uid="uid://b80eytqbv74qh" path="res://HealthPotion.tscn" id="3_dvrui"]
+[ext_resource type="PackedScene" uid="uid://cf1bpyew2bey0" path="res://SpeedBoost.tscn" id="4_ywdy1"]
+[ext_resource type="PackedScene" uid="uid://bdys1u54itw53" path="res://DamageBoost.tscn" id="5_gwra4"]
+
+[node name="Node2D" type="Node2D" groups=["Items"]]
+script = ExtResource("1_3jxj2")
+
+[node name="Chest" type="Sprite2D" parent="."]
+position = Vector2(22, 22)
+scale = Vector2(3.75, 3.75)
+texture = ExtResource("2_0l6ye")
+
+[node name="HealthBoost" parent="." instance=ExtResource("3_dvrui")]
+
+[node name="SpeedBoost" parent="." instance=ExtResource("4_ywdy1")]
+
+[node name="DamageBoost" parent="." instance=ExtResource("5_gwra4")]
