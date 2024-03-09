@@ -232,7 +232,7 @@ states/Walk/position = Vector2(488, 97)
 "states/İdle/position" = Vector2(316, 100)
 transitions = ["İdle", "Walk", SubResource("AnimationNodeStateMachineTransition_58814"), "Walk", "İdle", SubResource("AnimationNodeStateMachineTransition_jxh7h"), "Start", "İdle", SubResource("AnimationNodeStateMachineTransition_15ufi")]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
 collision_layer = 3
 script = ExtResource("1_fjyft")
 

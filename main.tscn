@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://by68c3w3urc82"]
+[gd_scene load_steps=5 format=3 uid="uid://by68c3w3urc82"]
 
 [ext_resource type="PackedScene" uid="uid://da444tv5hnuxu" path="res://choice.tscn" id="2_eq7xo"]
 [ext_resource type="PackedScene" uid="uid://b1fd0k558kp2" path="res://character_body_2d.tscn" id="3_0mkfd"]
 [ext_resource type="PackedScene" uid="uid://cbdcq4e5k1rtm" path="res://enemyprototip.tscn" id="3_qw84n"]
+[ext_resource type="PackedScene" uid="uid://bugi4owjli6x7" path="res://chest.tscn" id="4_m7yb0"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -13,3 +14,6 @@ position = Vector2(99, 38)
 
 [node name="enemyprototip" parent="." instance=ExtResource("3_qw84n")]
 position = Vector2(203, 89)
+
+[node name="Node2D2" parent="." instance=ExtResource("4_m7yb0")]
+position = Vector2(48, 126)
