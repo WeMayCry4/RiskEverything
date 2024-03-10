@@ -1,10 +1,8 @@
+res://NPC_Oldman.tscn
+res://NPC_Oldman.gd
 res://main.tscn
 res://choice.tscn
 res://character_body_2d.tscn
-res://enemyprototip.tscn
-res://health bar/health.tscn
-res://enemyprototip.gd
-res://1st map.tscn
-res://NPC_Oldman.tscn
-res://NPC_Oldman.gd
 res://chest.tscn
+res://character_body_2d.gd
+res://Chest.gd

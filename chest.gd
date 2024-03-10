@@ -18,20 +18,22 @@ func _ready():
 			inside = effects.HEALTH
 		1:
 			inside = effects.DAMAGE
-		0:ss
+		0:
 			inside = effects.SPEED		
 
 func _process(delta):
 	pass
 
 func _on_area_2d_body_entered(body):
-	label.visible = true
-	isLootable = true
+	if body.name == "Player":
+		label.visible = true
+		isLootable = true
 	pass
 
 func _on_area_2d_body_exited(body):
-	label.visible = false
-	isLootable = false
+	if body.name != "Player":
+		label.visible = false
+		isLootable = false
 	pass
 
 func _unhandled_input(event):

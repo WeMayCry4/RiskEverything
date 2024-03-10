@@ -9,6 +9,7 @@
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_wgby4")
+notePaths = [NodePath("Label"), NodePath("Label2")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(2.61664, 2.61664)
@@ -25,7 +26,29 @@ scale = Vector2(4.19546, 4.19546)
 shape = SubResource("CapsuleShape2D_bjhp1")
 
 [node name="Label" type="Label" parent="."]
-offset_left = -17.0
-offset_top = -62.0
-offset_right = 49.0
-offset_bottom = -39.0
+visible = false
+offset_left = -28.0
+offset_top = -80.0
+offset_right = 38.0
+offset_bottom = -57.0
+text = "Hello"
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+offset_left = -32.0
+offset_top = -81.0
+offset_right = 34.0
+offset_bottom = -58.0
+text = "People"
+
+[node name="RKey" type="Label" parent="."]
+visible = false
+offset_left = -28.0
+offset_top = -87.0
+offset_right = 28.0
+offset_bottom = -64.0
+text = "Press R"
+
+[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

@@ -10,7 +10,6 @@ size = Vector2(125, 115)
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_mniue")
-isLootable = null
 
 [node name="HealthBoost" type="Sprite2D" parent="."]
 
