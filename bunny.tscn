@@ -1,10 +1,11 @@
-[gd_scene load_steps=29 format=3 uid="uid://b0xievrnuybwe"]
+[gd_scene load_steps=30 format=3 uid="uid://b1fd0k558kp2"]
 
-[ext_resource type="Script" path="res://character_body_2d.gd" id="1_fjyft"]
-[ext_resource type="Texture2D" uid="uid://dobvkwauieauj" path="res://Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="2_khayo"]
-[ext_resource type="PackedScene" uid="uid://ckqb3dg2upw3k" path="res://health bar/health.tscn" id="3_yru1f"]
+[ext_resource type="Script" path="res://player.gd" id="1_mlmal"]
+[ext_resource type="Texture2D" uid="uid://dobvkwauieauj" path="res://Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="2_qoor8"]
+[ext_resource type="PackedScene" uid="uid://ckqb3dg2upw3k" path="res://health bar/health.tscn" id="3_b0lcg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1si3a"]
+size = Vector2(11, 18)
 
 [sub_resource type="Animation" id="Animation_h338j"]
 length = 0.001
@@ -232,19 +233,21 @@ states/Walk/position = Vector2(488, 97)
 "states/İdle/position" = Vector2(316, 100)
 transitions = ["İdle", "Walk", SubResource("AnimationNodeStateMachineTransition_58814"), "Walk", "İdle", SubResource("AnimationNodeStateMachineTransition_jxh7h"), "Start", "İdle", SubResource("AnimationNodeStateMachineTransition_15ufi")]
 
-[node name="CharacterBody2D2" type="CharacterBody2D" groups=["player"]]
+[sub_resource type="CircleShape2D" id="CircleShape2D_i3t1i"]
+radius = 7.07107
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["enemy"]]
 collision_layer = 3
-script = ExtResource("1_fjyft")
+script = ExtResource("1_mlmal")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0.2, -0.21)
-scale = Vector2(0.808, 0.822)
-texture = ExtResource("2_khayo")
+texture = ExtResource("2_qoor8")
 hframes = 4
 vframes = 4
 frame = 12
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_1si3a")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -262,9 +265,24 @@ anim_player = NodePath("../AnimationPlayer")
 parameters/Walk/blend_position = Vector2(0.0169492, -0.667686)
 "parameters/İdle/blend_position" = Vector2(-0.0105932, 0.00480354)
 
-[node name="Health" parent="." instance=ExtResource("3_yru1f")]
+[node name="Health" parent="." instance=ExtResource("3_b0lcg")]
 offset_left = -9.0
 offset_top = -16.0
 offset_right = 9.0
 offset_bottom = -12.0
-value = 100.0
+
+[node name="player_hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_hitbox"]
+shape = SubResource("CircleShape2D_i3t1i")
+
+[node name="attackcooldown" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="deal_attack_timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="player_hitbox" to="." method="_on_player_hitbox_body_entered"]
+[connection signal="body_exited" from="player_hitbox" to="." method="_on_player_hitbox_body_exited"]
+[connection signal="timeout" from="attackcooldown" to="." method="_on_attackcooldown_timeout"]
+[connection signal="timeout" from="deal_attack_timer" to="." method="_on_deal_attack_timer_timeout"]

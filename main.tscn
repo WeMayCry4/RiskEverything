@@ -1,23 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://by68c3w3urc82"]
+[gd_scene load_steps=5 format=3 uid="uid://by68c3w3urc82"]
 
 [ext_resource type="PackedScene" uid="uid://da444tv5hnuxu" path="res://choice.tscn" id="2_eq7xo"]
-[ext_resource type="PackedScene" uid="uid://b1fd0k558kp2" path="res://character_body_2d.tscn" id="3_0mkfd"]
-[ext_resource type="PackedScene" uid="uid://c7svpyf4cax3n" path="res://enemyprototip.tscn" id="3_qw84n"]
-[ext_resource type="PackedScene" uid="uid://2ltrshtsewnw" path="res://NPC_Oldman.tscn" id="4_hec6u"]
-[ext_resource type="PackedScene" uid="uid://cu64fx4e0plab" path="res://chest.tscn" id="5_4pryh"]
+[ext_resource type="PackedScene" uid="uid://do6hp4jn7qj72" path="res://chest.tscn" id="3_pdjph"]
+[ext_resource type="PackedScene" uid="uid://cbdcq4e5k1rtm" path="res://enemy.tscn" id="3_qw84n"]
+[ext_resource type="PackedScene" uid="uid://uv5rfipmxxei" path="res://player.tscn" id="4_28y6x"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Node2D" parent="." instance=ExtResource("2_eq7xo")]
 position = Vector2(99, 38)
 
-[node name="Player" parent="." instance=ExtResource("3_0mkfd")]
-
 [node name="enemyprototip" parent="." instance=ExtResource("3_qw84n")]
 position = Vector2(203, 89)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("4_hec6u")]
-position = Vector2(88, 166)
+[node name="Node2D2" parent="." instance=ExtResource("3_pdjph")]
+position = Vector2(203, 107)
 
-[node name="Node2D2" parent="." instance=ExtResource("5_4pryh")]
-position = Vector2(248, 216)
+[node name="CharacterBody2D" parent="." instance=ExtResource("4_28y6x")]
