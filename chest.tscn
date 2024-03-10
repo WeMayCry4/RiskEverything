@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://tlredrrdxk13"]
+[gd_scene load_steps=5 format=3 uid="uid://cu64fx4e0plab"]
 
 [ext_resource type="Script" path="res://Chest.gd" id="1_mniue"]
 [ext_resource type="Texture2D" uid="uid://dj0bfbbnsagfq" path="res://Sprout Lands - Sprites - Basic pack/Objects/Egg_item.png" id="2_0l6ye"]
