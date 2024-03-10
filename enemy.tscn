@@ -1,0 +1,118 @@
+[gd_scene load_steps=14 format=3 uid="uid://ypgkkj21lwa8"]
+
+[ext_resource type="Texture2D" uid="uid://djwba42ns4dfj" path="res://Sprout Lands - Sprites - Basic pack/Characters/Free Chicken Sprites.png" id="1_o0g7x"]
+[ext_resource type="Script" path="res://enemy.gd" id="1_qbmhb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ai6ro"]
+atlas = ExtResource("1_o0g7x")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ow1ju"]
+atlas = ExtResource("1_o0g7x")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wor14"]
+atlas = ExtResource("1_o0g7x")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qabpr"]
+atlas = ExtResource("1_o0g7x")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ig10"]
+atlas = ExtResource("1_o0g7x")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lbsin"]
+atlas = ExtResource("1_o0g7x")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cq2v8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ai6ro")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ow1ju")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wor14")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qabpr")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ig10")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lbsin")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 3.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xjjgl"]
+radius = 5.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bqks7"]
+radius = 45.1774
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6tdqp"]
+radius = 14.0801
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p67xr"]
+radius = 6.08276
+
+[node name="enemyprototip" type="CharacterBody2D" groups=["enemy"]]
+script = ExtResource("1_qbmhb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cq2v8")
+animation = &"attack"
+frame_progress = 0.306454
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 2)
+shape = SubResource("CircleShape2D_xjjgl")
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_bqks7")
+
+[node name="Area2D2" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(-1, 0.5)
+shape = SubResource("CircleShape2D_6tdqp")
+
+[node name="hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
+position = Vector2(-1, 1)
+shape = SubResource("CircleShape2D_p67xr")
+
+[node name="take_damage_cooldown" type="Timer" parent="."]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_2_body_entered"]
+[connection signal="body_exited" from="Area2D2" to="." method="_on_area_2d_2_body_exited"]
+[connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="body_exited" from="hitbox" to="." method="_on_hitbox_body_exited"]
+[connection signal="timeout" from="take_damage_cooldown" to="." method="_on_take_damage_cooldown_timeout"]

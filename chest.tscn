@@ -1,21 +1,49 @@
-[gd_scene load_steps=6 format=3 uid="uid://hru1tl0e1q2v"]
+[gd_scene load_steps=5 format=3 uid="uid://tlredrrdxk13"]
 
-[ext_resource type="Script" path="res://chest.gd" id="1_3jxj2"]
+[ext_resource type="Script" path="res://Chest.gd" id="1_mniue"]
 [ext_resource type="Texture2D" uid="uid://dj0bfbbnsagfq" path="res://Sprout Lands - Sprites - Basic pack/Objects/Egg_item.png" id="2_0l6ye"]
-[ext_resource type="PackedScene" uid="uid://b80eytqbv74qh" path="res://HealthPotion.tscn" id="3_dvrui"]
-[ext_resource type="PackedScene" uid="uid://cf1bpyew2bey0" path="res://SpeedBoost.tscn" id="4_ywdy1"]
-[ext_resource type="PackedScene" uid="uid://bdys1u54itw53" path="res://DamageBoost.tscn" id="5_gwra4"]
 
-[node name="Node2D" type="Node2D" groups=["Items"]]
-script = ExtResource("1_3jxj2")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eicyp"]
 
-[node name="Chest" type="Sprite2D" parent="."]
-position = Vector2(22, 22)
-scale = Vector2(3.75, 3.75)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mh2e8"]
+size = Vector2(125, 115)
+
+[node name="Node2D2" type="Node2D"]
+script = ExtResource("1_mniue")
+
+[node name="HealthBoost" type="Sprite2D" parent="."]
+
+[node name="SpeedBoost" type="Sprite2D" parent="."]
+
+[node name="DamageBoost" type="Sprite2D" parent="."]
+
+[node name="Chest" type="CharacterBody2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="Chest"]
+scale = Vector2(3.267, 3.26197)
+shape = SubResource("RectangleShape2D_eicyp")
+
+[node name="Sprite" type="Sprite2D" parent="Chest"]
+scale = Vector2(4.65527, 4.52543)
 texture = ExtResource("2_0l6ye")
 
-[node name="HealthBoost" parent="." instance=ExtResource("3_dvrui")]
+[node name="Area2D" type="Area2D" parent="Chest"]
+position = Vector2(-62, 19)
+scale = Vector2(0.949784, 1.00521)
 
-[node name="SpeedBoost" parent="." instance=ExtResource("4_ywdy1")]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chest/Area2D"]
+position = Vector2(65.4015, -20.6258)
+shape = SubResource("RectangleShape2D_mh2e8")
 
-[node name="DamageBoost" parent="." instance=ExtResource("5_gwra4")]
+[node name="Label" type="Label" parent="Chest"]
+visible = false
+offset_left = -26.0
+offset_top = -76.0
+offset_right = 30.0
+offset_bottom = -53.0
+text = "Press R"
+
+[connection signal="area_entered" from="Chest/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Chest/Area2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="body_entered" from="Chest/Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Chest/Area2D" to="." method="_on_area_2d_body_exited"]

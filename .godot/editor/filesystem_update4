@@ -1,5 +1,7 @@
-res://main.tscn
-res://PlayerSc.tscn
 res://choice.tscn
-res://character_body_2d.tscn
-res://character_body_2d.gd
+res://health bar/health.tscn
+res://chest.tscn
+res://enemy.tscn
+res://player.tscn
+res://player.gd
+res://enemy.gd
