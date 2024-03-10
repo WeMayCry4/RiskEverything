@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://2ltrshtsewnw"]
+
+[ext_resource type="Script" path="res://NPC_Oldman.gd" id="1_wgby4"]
+[ext_resource type="Texture2D" uid="uid://dj0bfbbnsagfq" path="res://Sprout Lands - Sprites - Basic pack/Objects/Egg_item.png" id="1_yo21u"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bw2bn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bjhp1"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_wgby4")
+notePaths = [NodePath("Label"), NodePath("Label2")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2.61664, 2.61664)
+shape = SubResource("CapsuleShape2D_bw2bn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3.94764, 3.94764)
+texture = ExtResource("1_yo21u")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(4.19546, 4.19546)
+shape = SubResource("CapsuleShape2D_bjhp1")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -28.0
+offset_top = -80.0
+offset_right = 38.0
+offset_bottom = -57.0
+text = "Hello"
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+offset_left = -32.0
+offset_top = -81.0
+offset_right = 34.0
+offset_bottom = -58.0
+text = "People"
+
+[node name="RKey" type="Label" parent="."]
+visible = false
+offset_left = -28.0
+offset_top = -87.0
+offset_right = 28.0
+offset_bottom = -64.0
+text = "Press R"
+
+[connection signal="area_shape_entered" from="Area2D" to="." method="_on_area_2d_area_shape_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

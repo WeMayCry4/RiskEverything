@@ -1,10 +1,11 @@
-res://character_body_2d.tscn
 res://main.tscn
 res://choice.tscn
-res://player.tscn
-res://enemy.tscn
+res://character_body_2d.tscn
+res://enemyprototip.tscn
 res://health bar/health.tscn
+res://enemyprototip.gd
+res://1st map.tscn
+res://NPC_Oldman.tscn
+res://NPC_Oldman.gd
 res://chest.tscn
-res://bunny.tscn
-res://enemy.gd
-res://player.gd
+res://character_body_2d.gd

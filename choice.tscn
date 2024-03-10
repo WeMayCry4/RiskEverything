@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://choice.gd" id="1_dvbip"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 position = Vector2(220, 42)
 script = ExtResource("1_dvbip")
 drainSpeed = 0.3
