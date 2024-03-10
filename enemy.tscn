@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cbdcq4e5k1rtm"]
+[gd_scene load_steps=14 format=3 uid="uid://cyfimh5gvxl44"]
 
 [ext_resource type="Texture2D" uid="uid://djwba42ns4dfj" path="res://Sprout Lands - Sprites - Basic pack/Characters/Free Chicken Sprites.png" id="1_o0g7x"]
 [ext_resource type="Script" path="res://enemy.gd" id="1_qbmhb"]
@@ -106,6 +106,8 @@ shape = SubResource("CircleShape2D_6tdqp")
 position = Vector2(-1, 1)
 shape = SubResource("CircleShape2D_p67xr")
 
+[node name="take_damage_cooldown" type="Timer" parent="."]
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_2_body_entered"]
@@ -113,3 +115,4 @@ shape = SubResource("CircleShape2D_p67xr")
 [connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]
 [connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
 [connection signal="body_exited" from="hitbox" to="." method="_on_hitbox_body_exited"]
+[connection signal="timeout" from="take_damage_cooldown" to="." method="_on_take_damage_cooldown_timeout"]
