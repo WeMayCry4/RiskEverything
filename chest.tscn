@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cu64fx4e0plab"]
+[gd_scene load_steps=5 format=3 uid="uid://tlredrrdxk13"]
 
 [ext_resource type="Script" path="res://Chest.gd" id="1_mniue"]
 [ext_resource type="Texture2D" uid="uid://dj0bfbbnsagfq" path="res://Sprout Lands - Sprites - Basic pack/Objects/Egg_item.png" id="2_0l6ye"]
@@ -8,7 +8,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mh2e8"]
 size = Vector2(125, 115)
 
-[node name="Node2D2" type="Node2D"]
+[node name="Node2D3" type="Node2D"]
 script = ExtResource("1_mniue")
 
 [node name="HealthBoost" type="Sprite2D" parent="."]
