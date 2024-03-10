@@ -1,13 +1,14 @@
-[gd_scene load_steps=23 format=3 uid="uid://cg1visx1mryi"]
+[gd_scene load_steps=25 format=3 uid="uid://cg1visx1mryi"]
 
 [ext_resource type="Texture2D" uid="uid://ekwub783apet" path="res://Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="1_gwj8k"]
 [ext_resource type="Texture2D" uid="uid://t5kkkv3ii24p" path="res://Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png" id="2_o5nv4"]
+[ext_resource type="Texture2D" uid="uid://ovw2uomiouaw" path="res://Sprout Lands - Sprites - Basic pack/Tilesets/TX_Tileset_Gras.png" id="3_8bbd8"]
 [ext_resource type="Texture2D" uid="uid://b77stm4xuvles" path="res://Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt.png" id="3_ii28n"]
 [ext_resource type="Texture2D" uid="uid://culfwn5joeyca" path="res://Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="4_s4o7s"]
-[ext_resource type="Texture2D" path="res://Texture/TX Tileset Grass.png" id="5_ijcgr"]
-[ext_resource type="Texture2D" path="res://Texture/TX Tileset Stone Ground.png" id="6_km4e4"]
-[ext_resource type="Texture2D" path="res://Texture/TX Tileset Wall.png" id="7_tp71c"]
-[ext_resource type="Texture2D" path="res://Texture/TX Props.png" id="8_aq7ch"]
+[ext_resource type="Texture2D" uid="uid://jpdtwx386xj2" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Tileset Grass.png" id="5_ijcgr"]
+[ext_resource type="Texture2D" uid="uid://b7gi2h7j12bds" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Tileset Stone Ground.png" id="6_km4e4"]
+[ext_resource type="Texture2D" uid="uid://doqwblij45oby" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Tileset Wall.png" id="7_tp71c"]
+[ext_resource type="Texture2D" uid="uid://cx8e2650yt81k" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Props.png" id="8_aq7ch"]
 [ext_resource type="PackedScene" uid="uid://b1fd0k558kp2" path="res://character_body_2d.tscn" id="9_64gbp"]
 [ext_resource type="Texture2D" uid="uid://beuco61pn82p3" path="res://Sprout Lands - Sprites - Basic pack/Characters/Texture/TX Struct.png" id="9_403ys"]
 [ext_resource type="Texture2D" uid="uid://dvxk0q2g75fxy" path="res://Sprout Lands - Sprites - Basic pack/Objects/TX_Tileset_Grass.png" id="10_vkqdv"]
@@ -155,6 +156,19 @@ texture = ExtResource("2_o5nv4")
 7:6/0 = 0
 9:6/0 = 0
 10:6/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t8s27"]
+texture = ExtResource("3_8bbd8")
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kjqdb"]
 texture = ExtResource("3_ii28n")
@@ -1480,6 +1494,7 @@ sources/6 = SubResource("TileSetAtlasSource_1p4or")
 sources/7 = SubResource("TileSetAtlasSource_c62gr")
 sources/8 = SubResource("TileSetAtlasSource_uxlue")
 sources/9 = SubResource("TileSetAtlasSource_gfgjh")
+sources/10 = SubResource("TileSetAtlasSource_t8s27")
 
 [node name="Node2D" type="Node2D"]
 

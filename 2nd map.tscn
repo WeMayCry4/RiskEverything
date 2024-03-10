@@ -1,7 +1,7 @@
-[gd_scene load_steps=48 format=3 uid="uid://du1ynvp5ig80k"]
+[gd_scene load_steps=50 format=3 uid="uid://du1ynvp5ig80k"]
 
-[ext_resource type="Texture2D" path="res://Texture/TX Plant.png" id="1_1vs06"]
-[ext_resource type="Texture2D" path="res://Texture/TX Player.png" id="2_pun8q"]
+[ext_resource type="Texture2D" uid="uid://x6bg2fi6abob" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Plant.png" id="1_1vs06"]
+[ext_resource type="Texture2D" uid="uid://cqkdvxsohbbw7" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Player.png" id="2_pun8q"]
 [ext_resource type="Texture2D" uid="uid://dhy15rosrnxdq" path="res://Sprout Lands - Sprites - Basic pack/Objects/Basic_Furniture.png" id="3_41q62"]
 [ext_resource type="Texture2D" uid="uid://bxsggqmk4lqp1" path="res://Sprout Lands - Sprites - Basic pack/Objects/Basic_Grass_Biom_things.png" id="4_4lt52"]
 [ext_resource type="Texture2D" uid="uid://djsf52qhbdenq" path="res://Sprout Lands - Sprites - Basic pack/Objects/Basic_Plants.png" id="5_638g6"]
@@ -12,16 +12,17 @@
 [ext_resource type="Texture2D" uid="uid://culfwn5joeyca" path="res://Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="10_bjuqn"]
 [ext_resource type="Texture2D" uid="uid://b77stm4xuvles" path="res://Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt.png" id="11_q4hwf"]
 [ext_resource type="Texture2D" uid="uid://bfiy8qaas8xhj" path="res://Sprout Lands - Sprites - Basic pack/Objects/Untitled_Artwork.png" id="12_67qv2"]
-[ext_resource type="Texture2D" path="res://Texture/TX Props.png" id="13_v7hgp"]
+[ext_resource type="Texture2D" uid="uid://cx8e2650yt81k" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Props.png" id="13_v7hgp"]
 [ext_resource type="Texture2D" uid="uid://dy7qxgj70fuxx" path="res://Sprout Lands - Sprites - Basic pack/Objects/WH2.png" id="14_6qxht"]
 [ext_resource type="Texture2D" uid="uid://dcfhqpf0ejmcx" path="res://Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png" id="15_88ol4"]
-[ext_resource type="Texture2D" path="res://Texture/TX Shadow Plant.png" id="15_xnip5"]
-[ext_resource type="Texture2D" path="res://Texture/TX Shadow.png" id="16_4j4hn"]
+[ext_resource type="Texture2D" uid="uid://d11qbypjcw4nn" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Shadow Plant.png" id="15_xnip5"]
+[ext_resource type="Texture2D" uid="uid://bvntbjw072l37" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Shadow.png" id="16_4j4hn"]
 [ext_resource type="Texture2D" uid="uid://f7kqh46us7bk" path="res://Sprout Lands - Sprites - Basic pack/Objects/WH3.png" id="16_cbbry"]
-[ext_resource type="Texture2D" path="res://Texture/TX Struct.png" id="17_k70xs"]
-[ext_resource type="Texture2D" path="res://Texture/TX Tileset Grass.png" id="18_kp6wt"]
-[ext_resource type="Texture2D" path="res://Texture/TX Tileset Stone Ground.png" id="19_54d01"]
-[ext_resource type="Texture2D" path="res://Texture/TX Tileset Wall.png" id="20_ry87f"]
+[ext_resource type="Texture2D" uid="uid://cls36o8fee4ic" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Struct.png" id="17_k70xs"]
+[ext_resource type="Texture2D" uid="uid://dwf86c3v8kk6u" path="res://Sprout Lands - Sprites - Basic pack/Characters/old.png" id="17_sbngh"]
+[ext_resource type="Texture2D" uid="uid://jpdtwx386xj2" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Tileset Grass.png" id="18_kp6wt"]
+[ext_resource type="Texture2D" uid="uid://b7gi2h7j12bds" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Tileset Stone Ground.png" id="19_54d01"]
+[ext_resource type="Texture2D" uid="uid://doqwblij45oby" path="res://Sprout Lands - Sprites - Basic pack/Characters/Pixel Art Top Down - Basic/Texture/TX Tileset Wall.png" id="20_ry87f"]
 [ext_resource type="Texture2D" uid="uid://c0l2asw7yuccb" path="res://Sprout Lands - Sprites - Basic pack/Objects/Paths.png" id="21_3xggm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_enwmy"]
@@ -1394,6 +1395,17 @@ texture = ExtResource("16_cbbry")
 7:17/0 = 0
 8:17/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rsuwn"]
+texture = ExtResource("17_sbngh")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w6f8l"]
 texture = ExtResource("15_xnip5")
 4:6/0 = 0
@@ -2716,6 +2728,7 @@ sources/19 = SubResource("TileSetAtlasSource_6a0ex")
 sources/20 = SubResource("TileSetAtlasSource_youcj")
 sources/21 = SubResource("TileSetAtlasSource_cq5lb")
 sources/22 = SubResource("TileSetAtlasSource_6l6ep")
+sources/23 = SubResource("TileSetAtlasSource_rsuwn")
 
 [node name="Node2D" type="Node2D"]
 
@@ -2730,4 +2743,4 @@ layer_1/tile_data = PackedInt32Array(-131064, 1245186, 13, -65528, 65536, 5, 8, 
 layer_2/name = "3rd"
 layer_2/tile_data = PackedInt32Array(589838, 196617, 3, 18, 589842, 5, 65554, 589842, 6, 131090, 589842, 5, 196626, 589842, 6, 262162, 589842, 5, 327698, 589842, 6, 393234, 589842, 5, 458770, 589842, 6, 720914, 589842, 5, 786450, 589842, 6, 851986, 589842, 5, 917522, 589842, 6, 983058, 589842, 5, 1048594, 589842, 6, 1114130, 589842, 5, 524306, 589842, 5, 655378, 589842, 6, 655374, 524306, 5, 458765, 524299, 2, 524301, 524299, 3, 458760, 524299, 2, 524296, 524299, 3, 458753, 524299, 2, 524289, 524299, 3, 458758, 524299, 2, 524294, 524299, 3, 524290, 327691, 0, 524293, 327691, 0, 589835, 327691, 0, 524297, 524299, 0, 589831, 524299, 0, 655379, 262155, 2, 327701, 262155, 2, 851981, 262155, 2, 1114123, 262155, 2, 1048596, 262155, 2, 655375, 393227, 4, 1114129, 393227, 4, 720912, 393227, 4, 393231, 393227, 4, 65552, 393227, 4, 983055, 327691, 4, 196625, 327691, 4, 786451, 458763, 3, 720917, 458763, 3, 327691, 458763, 3, 262156, 458763, 3, 720899, 327691, 0, 786440, 327691, 0, 720909, 327691, 0, 720902, 524299, 0, 720896, 524299, 0, 655369, 524299, 2, 720905, 524299, 3, 655365, 524299, 2, 720901, 524299, 3, 1179666, 196626, 6, 1114118, 262144, 1, 1114138, 327680, 1, 1114139, 393216, 1, 589842, 65545, 3, -65532, 1310722, 16, 4, 1310722, 17, -65531, 1376258, 16, 5, 1376258, 17, -262140, 1310722, 16, -196604, 1310722, 17, -262139, 1376258, 16, -196603, 1376258, 17, -65534, 1310722, 16, 2, 1310722, 17, -65533, 1376258, 16, 3, 1376258, 17, -131065, 1310722, 16, -65529, 1310722, 17, -131064, 1376258, 16, -65528, 1376258, 17, -327679, 1048578, 12, -262143, 1048578, 13, -327678, 1114114, 12, -262142, 1114114, 13, 1310723, 65536, 4, 1376259, 65536, 5, 1441795, 65536, 6, 1179652, 131072, 2, 1245188, 131072, 3, 1310724, 131072, 4, 1376260, 131072, 5, 1441796, 131072, 6, 1507332, 131072, 7, 1114117, 196608, 1, 1179653, 196608, 2, 1245189, 196608, 3, 1310725, 196608, 4, 1376261, 196608, 5, 1441797, 196608, 6, 1507333, 196608, 7, 1048582, 262144, 0, 1179654, 262144, 2, 1245190, 262144, 3, 1310726, 262144, 4, 1376262, 262144, 5, 1441798, 262144, 6, 1507334, 262144, 7, 1572870, 262144, 8, 1638406, 262144, 9, 1048583, 327680, 0, 1114119, 327680, 1, 1179655, 327680, 2, 1245191, 327680, 3, 1310727, 327680, 4, 1376263, 327680, 5, 1441799, 327680, 6, 1507335, 327680, 7, 1572871, 327680, 8, 1638407, 327680, 9, 1114120, 393216, 1, 1179656, 393216, 2, 1245192, 393216, 3, 1310728, 393216, 4, 1376264, 393216, 5, 1441800, 393216, 6, 1507336, 393216, 7, 1179657, 458752, 2, 1245193, 458752, 3, 1310729, 458752, 4, 1376265, 458752, 5, 1441801, 458752, 6, 1310730, 524288, 4, 1376266, 524288, 5, 1310742, 65536, 4, 1376278, 65536, 5, 1441814, 65536, 6, 1179671, 131072, 2, 1245207, 131072, 3, 1310743, 131072, 4, 1376279, 131072, 5, 1441815, 131072, 6, 1507351, 131072, 7, 1114136, 196608, 1, 1179672, 196608, 2, 1245208, 196608, 3, 1310744, 196608, 4, 1376280, 196608, 5, 1441816, 196608, 6, 1507352, 196608, 7, 1048601, 262144, 0, 1114137, 262144, 1, 1179673, 262144, 2, 1245209, 262144, 3, 1310745, 262144, 4, 1376281, 262144, 5, 1441817, 262144, 6, 1507353, 262144, 7, 1572889, 262144, 8, 1638425, 262144, 9, 1048602, 327680, 0, 1179674, 327680, 2, 1245210, 327680, 3, 1310746, 327680, 4, 1376282, 327680, 5, 1441818, 327680, 6, 1507354, 327680, 7, 1572890, 327680, 8, 1638426, 327680, 9, 1179675, 393216, 2, 1245211, 393216, 3, 1310747, 393216, 4, 1376283, 393216, 5, 1441819, 393216, 6, 1507355, 393216, 7, 1179676, 458752, 2, 1245212, 458752, 3, 1310748, 458752, 4, 1376284, 458752, 5, 1441820, 458752, 6, 1310749, 524288, 4, 1376285, 524288, 5)
 layer_3/name = "Bridge"
-layer_3/tile_data = PackedInt32Array(589838, 131086, 1, 589839, 196622, 1, 589840, 196622, 1, 589841, 196622, 1, 589842, 262158, 1, 65540, 393218, 1, 131076, 393218, 2, 196612, 393218, 3, 65541, 458754, 1, 131077, 458754, 2, 196613, 458754, 3)
+layer_3/tile_data = PackedInt32Array(589838, 131086, 1, 589839, 196622, 1, 589840, 196622, 1, 589841, 196622, 1, 589842, 262158, 1, 65540, 393218, 1, 131076, 393218, 2, 196612, 393218, 3, 65541, 458754, 1, 131077, 458754, 2, 196613, 458754, 3, 262163, 23, 0, 327699, 23, 1, 393235, 23, 2, 458771, 23, 3, 262164, 65559, 0, 327700, 65559, 1, 393236, 65559, 2, 458772, 65559, 3)
