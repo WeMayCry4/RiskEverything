@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://2ltrshtsewnw"]
+[gd_scene load_steps=5 format=3 uid="uid://db5x82qoci2hc"]
 
 [ext_resource type="Script" path="res://NPC_Oldman.gd" id="1_wgby4"]
 [ext_resource type="Texture2D" uid="uid://dj0bfbbnsagfq" path="res://Sprout Lands - Sprites - Basic pack/Objects/Egg_item.png" id="1_yo21u"]

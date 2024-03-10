@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://b1fd0k558kp2"]
+[gd_scene load_steps=29 format=3 uid="uid://b0xievrnuybwe"]
 
 [ext_resource type="Script" path="res://character_body_2d.gd" id="1_fjyft"]
 [ext_resource type="Texture2D" uid="uid://dobvkwauieauj" path="res://Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="2_khayo"]
