@@ -45,8 +45,7 @@ func giveDamageBoost():
 
 func useHealthPotion():
 	health_boosts -= 1
-	health -= health * (15/100)
-	healthBar.health = health
+	health += health * (15/100)
 
 func giveHealthPotion():
 	health_boosts += 1
