@@ -18,7 +18,7 @@ func _ready():
 			inside = effects.HEALTH
 		1:
 			inside = effects.DAMAGE
-		0:
+		0:ss
 			inside = effects.SPEED		
 
 func _process(delta):

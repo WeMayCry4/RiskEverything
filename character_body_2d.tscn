@@ -1,7 +1,7 @@
 [gd_scene load_steps=29 format=3 uid="uid://b1fd0k558kp2"]
 
 [ext_resource type="Script" path="res://character_body_2d.gd" id="1_fjyft"]
-[ext_resource type="Texture2D" uid="uid://dobvkwauieauj" path="res://Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_qhc3j"]
+[ext_resource type="Texture2D" uid="uid://klijflvjga64" path="res://playerAssets/Untitled_Artwork.png" id="2_vr7ws"]
 [ext_resource type="PackedScene" uid="uid://ckqb3dg2upw3k" path="res://health bar/health.tscn" id="3_yru1f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1si3a"]
@@ -236,8 +236,10 @@ transitions = ["İdle", "Walk", SubResource("AnimationNodeStateMachineTransition
 collision_layer = 3
 script = ExtResource("1_fjyft")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_qhc3j")
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["player"]]
+position = Vector2(0.2, -0.21)
+scale = Vector2(1.00361, 1.02153)
+texture = ExtResource("2_vr7ws")
 hframes = 4
 vframes = 4
 frame = 12

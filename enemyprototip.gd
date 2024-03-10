@@ -4,8 +4,6 @@ var speed = 45
 var player_chase = false
 var player = null
 
-
-
 func _physics_process(delta):
 	if player_chase:
 		position += (player.position - position)/speed
