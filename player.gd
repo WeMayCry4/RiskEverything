@@ -7,7 +7,7 @@ extends CharacterBody2D
 var enemy_attack_cooldown = true
 var enemy_inattack_range = false
 var player_alive = true
-var health1 = 100
+
 @onready var animation_tree = $AnimationTree
 @onready var state_machine = animation_tree.get("parameters/playback")
 var attack_ip = false
@@ -18,12 +18,13 @@ func _ready():
 	update_animation_parameters(starting_direction)
 
 func _physics_process(delta):
+	update_health()
 	if enemy_inattack_range: 
 		enemy_attack()
 	attack()
-	if health1 <= 0:
+	if health <= 0:
 		player_alive = false
-		health1 = 0
+		health = 0
 		print ("player is dead")
 		self.queue_free()
 		
@@ -80,10 +81,10 @@ func _on_player_hitbox_body_exited(body):
 func enemy_attack():
 	if enemy_inattack_range and enemy_attack_cooldown == true:
 		
-		health1 = health1 - 20
+		health = health - 20
 		enemy_attack_cooldown = false
-		$attackcooldown.start(1)
-		print(health1)
+		$attackcooldown.start(1.5)
+		print(health)
 
 func _on_attackcooldown_timeout():
 	enemy_attack_cooldown = true
@@ -97,3 +98,12 @@ func _on_deal_attack_timer_timeout():
 	$deal_attack_timer.stop()
 	global.player_current_attack = false
 	attack_ip = false
+
+func update_health():
+	var healthbar = $healthbar
+	healthbar.value = health
+	if health >= 100:
+		healthbar.visible = false
+	else :
+		healthbar.visible = true
+

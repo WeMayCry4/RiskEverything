@@ -1,8 +1,7 @@
-[gd_scene load_steps=30 format=3 uid="uid://uv5rfipmxxei"]
+[gd_scene load_steps=29 format=3 uid="uid://cvx0bv08bj7d8"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_65y43"]
-[ext_resource type="Texture2D" uid="uid://dp2n2tcrvpbkf" path="res://suzi art 3.png" id="2_f3kas"]
-[ext_resource type="PackedScene" uid="uid://ckqb3dg2upw3k" path="res://health bar/health.tscn" id="3_yru1f"]
+[ext_resource type="Texture2D" path="res://suzi art 3.png" id="2_f3kas"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1si3a"]
 size = Vector2(11, 18)
@@ -89,7 +88,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_xih1w"]
 resource_name = "walk down"
-length = 2.0
+length = 1.2
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -98,7 +97,7 @@ tracks/0/path = NodePath("Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3]
@@ -268,12 +267,6 @@ anim_player = NodePath("../AnimationPlayer")
 parameters/Walk/blend_position = Vector2(0.0169492, -0.667686)
 "parameters/İdle/blend_position" = Vector2(-0.0105932, 0.00480354)
 
-[node name="Health" parent="." instance=ExtResource("3_yru1f")]
-offset_left = -7.0
-offset_top = -30.0
-offset_right = 11.0
-offset_bottom = -26.0
-
 [node name="player_hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player_hitbox"]
@@ -284,6 +277,15 @@ wait_time = 5.0
 
 [node name="deal_attack_timer" type="Timer" parent="."]
 wait_time = 5.0
+
+[node name="healthbar" type="ProgressBar" parent="."]
+modulate = Color(0.0627451, 0.690196, 0.231373, 1)
+visibility_layer = 2
+offset_left = -17.0
+offset_top = -22.0
+offset_right = 18.0
+offset_bottom = -18.0
+show_percentage = false
 
 [connection signal="body_entered" from="player_hitbox" to="." method="_on_player_hitbox_body_entered"]
 [connection signal="body_exited" from="player_hitbox" to="." method="_on_player_hitbox_body_exited"]
