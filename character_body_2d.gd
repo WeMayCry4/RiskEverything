@@ -5,10 +5,11 @@ extends CharacterBody2D
 @export var damage: float = 10
 @export var starting_direction : Vector2 = Vector2(0,1)
 
+@onready var healthBar = $Health
 @onready var animation_tree = $AnimationTree
 @onready var state_machine = animation_tree.get("parameters/playback")
 
-var health_boosts = 0
+var health_boosts = 10
 
 func _ready():
 	update_animation_parameters(starting_direction)
@@ -44,8 +45,14 @@ func giveDamageBoost():
 
 func useHealthPotion():
 	health_boosts -= 1
-	health += health * (15/100)
+	health -= health * (15/100)
+	healthBar.health = health
 
 func giveHealthPotion():
-	print("yeyeyeyfishfoaihsdhfoi")
 	health_boosts += 1
+
+func _unhandled_input(event):
+	if event is InputEventKey:
+		if event.pressed and event.keycode == KEY_E:
+			if health_boosts != 0:
+				useHealthPotion()
